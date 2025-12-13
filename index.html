@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <title>Đồ Thờ Đại Lộc — Chuyên Tư Vấn, Thiết Kế & Sản Xuất Đồ Thờ Cao Cấp</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Montserrat', 'system-ui', 'sans-serif'],
+            display: ['Playfair Display', 'serif'],
+          },
+          colors: {
+            dl: {
+              bg: '#f5f1ea',
+              card: '#ffffff',
+              text: '#1f2933',
+              gold: '#b08a42',
+              dark: '#3b2a1a',
+            }
+          },
+          boxShadow: {
+            soft: '0 18px 45px rgba(15,23,42,0.12)',
+          },
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #f5f1ea;
+      color: #1f2933;
+    }
+    html, body { overflow-x: hidden; }
+  </style>
+</head>
+
+<body class="bg-dl-bg text-dl-text">
+  <div class="min-h-screen flex flex-col">
+
+    <!-- HEADER + HERO -->
+    <header class="bg-white/90 backdrop-blur shadow-soft">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between py-3 sm:py-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-dl-dark flex items-center justify-center overflow-hidden">
+              <a href="#">
+                <img src="./assets/img/logo.png" alt="LOGO" class="w-full h-full object-contain">
+              </a>
+            </div>
+            <div>
+              <h1 class="text-lg sm:text-xl font-display font-semibold tracking-wide text-dl-dark">
+                ĐỒ THỜ ĐẠI LỘC
+              </h1>
+              <p class="text-[11px] sm:text-xs uppercase tracking-[0.18em] text-slate-500">
+                TƯ VẤN • THIẾT KẾ • SẢN XUẤT
+              </p>
+            </div>
+          </div>
+
+          <div class="hidden sm:flex items-center gap-6 text-sm">
+            <a href="#dich-vu" class="hover:text-dl-gold transition">Dịch vụ</a>
+            <a href="#ly-do" class="hover:text-dl-gold transition">Vì sao chọn chúng tôi</a>
+            <a href="javascript:void(0)" data-open-contact class="hover:text-dl-gold transition">Liên hệ</a>
+
+            <a href="tel:0396297856"
+               class="inline-flex items-center gap-2 rounded-full border border-dl-gold px-4 py-1.5 text-xs font-medium text-dl-dark hover:bg-dl-gold hover:text-white transition">
+              <span class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-dl-gold/10">📞</span>
+              0396 297 856
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- HERO -->
+      <div class="border-y border-slate-200/60 bg-gradient-to-b from-white to-dl-bg">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-10 lg:py-12 grid lg:grid-cols-2 gap-8 lg:gap-10 items-center">
+          <div class="space-y-4 sm:space-y-5">
+            <p class="text-[11px] sm:text-xs tracking-[0.2em] uppercase text-slate-500">CHUYÊN ĐỒ THỜ CAO CẤP</p>
+
+            <h2 class="font-display text-2xl sm:text-3xl lg:text-4xl font-semibold leading-tight text-dl-dark">
+              Tư vấn, thiết kế &amp; thi công
+              <span class="text-dl-gold">không gian thờ trang nghiêm</span>
+              trong mọi kiến trúc hiện đại.
+            </h2>
+
+            <p class="text-sm sm:text-base text-slate-600 max-w-xl">
+              Đồ Thờ Đại Lộc đồng hành cùng gia chủ từ ý tưởng đến hoàn thiện
+              – cân bằng giữa đường nét cổ truyền và phong cách nội thất hiện đại,
+              sử dụng chất liệu gỗ tuyển chọn, chạm khắc tinh xảo.
+            </p>
+
+            <div class="flex flex-wrap gap-3 sm:gap-4">
+              <a href="javascript:void(0)" data-open-contact
+                 class="inline-flex items-center gap-2 rounded-full bg-dl-gold text-white px-5 py-2 text-xs sm:text-sm font-semibold shadow-soft hover:translate-y-[1px] hover:shadow-md transition">
+                ĐẶT LỊCH TƯ VẤN MIỄN PHÍ <span>↗</span>
+              </a>
+
+              <div class="flex items-center gap-3 text-xs sm:text-sm text-slate-600">
+                <div class="h-8 w-px bg-slate-300 hidden sm:block"></div>
+                <div>
+                  <p class="font-medium text-dl-dark">Bảo hành lên tới 5 năm</p>
+                  <p class="text-[11px] sm:text-xs text-slate-500">Cam kết chất lượng vật liệu &amp; thi công</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hình -->
+          <div class="relative">
+            <div class="aspect-[16/10] rounded-3xl overflow-hidden bg-slate-200 shadow-soft border border-slate-200">
+              <img src="./assets/img/banner2-cr-1600x590.jpg"
+                   alt="Không gian phòng thờ gỗ cao cấp"
+                   class="w-full h-full object-cover">
+            </div>
+
+            <div class="hidden sm:flex items-center gap-3 px-4 py-3 rounded-2xl bg-white/90 backdrop-blur border border-slate-200 shadow-soft absolute -bottom-4 left-4">
+              <div class="h-10 w-10 rounded-full bg-dl-gold/10 flex items-center justify-center text-xl">🪵</div>
+              <div class="text-xs">
+                <p class="font-semibold text-dl-dark">Gỗ tự nhiên tuyển chọn</p>
+                <p class="text-[11px] text-slate-500">Sơn PU cao cấp, độ bền màu &gt; 10 năm*</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="flex-1">
+
+      <!-- DỊCH VỤ CHÍNH -->
+      <section id="dich-vu" class="py-8 sm:py-10 lg:py-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-6 sm:mb-8">
+            <h3 class="font-display text-xl sm:text-2xl lg:text-3xl font-semibold text-dl-dark tracking-tight">
+              CHUYÊN TƯ VẤN – THIẾT KẾ – SẢN XUẤT ĐỒ THỜ CAO CẤP
+            </h3>
+            <p class="mt-2 text-sm sm:text-base text-slate-600 max-w-2xl mx-auto">
+              Đầy đủ giải pháp cho không gian thờ từ bản vẽ, chất liệu, kiểu dáng cho tới thi công trọn gói,
+              phù hợp căn hộ, nhà phố, biệt thự và nhà thờ họ.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4">
+            <div class="group bg-white rounded-2xl border border-slate-200 shadow-soft/40 px-3 py-4 sm:px-4 sm:py-5 flex flex-col items-center text-center hover:-translate-y-1 hover:shadow-soft hover:border-dl-gold/60 transition">
+              <div class="mb-3 h-16 w-16 flex items-center justify-center">
+                <img src="./assets/icons/tu-bo-dinh.png" alt="Tủ bộ đỉnh, đèn, chùa" class="max-h-16 w-auto object-contain">
+              </div>
+              <p class="text-xs sm:text-sm font-medium text-dl-dark">Tủ bộ đỉnh, đèn, chùa</p>
+            </div>
+
+            <div class="group bg-white rounded-2xl border border-slate-200 shadow-soft/40 px-3 py-4 sm:px-4 sm:py-5 flex flex-col items-center text-center hover:-translate-y-1 hover:shadow-soft hover:border-dl-gold/60 transition">
+              <div class="mb-3 h-16 w-16 flex items-center justify-center">
+                <img src="./assets/icons/thiet-ke-ban-tho.png" alt="Thiết kế bàn thờ" class="max-h-16 w-auto object-contain">
+              </div>
+              <p class="text-xs sm:text-sm font-medium text-dl-dark">Thiết kế bàn thờ</p>
+            </div>
+
+            <div class="group bg-white rounded-2xl border border-slate-200 shadow-soft/40 px-3 py-4 sm:px-4 sm:py-5 flex flex-col items-center text-center hover:-translate-y-1 hover:shadow-soft hover:border-dl-gold/60 transition">
+              <div class="mb-3 h-16 w-16 flex items-center justify-center">
+                <img src="./assets/icons/son-son-thep-vang.png" alt="Sơn son thếp vàng" class="max-h-16 w-auto object-contain">
+              </div>
+              <p class="text-xs sm:text-sm font-medium text-dl-dark">Sơn son thếp vàng</p>
+            </div>
+
+            <div class="group bg-white rounded-2xl border border-slate-200 shadow-soft/40 px-3 py-4 sm:px-4 sm:py-5 flex flex-col items-center text-center hover:-translate-y-1 hover:shadow-soft hover:border-dl-gold/60 transition">
+              <div class="mb-3 h-16 w-16 flex items-center justify-center">
+                <img src="./assets/icons/do-gia-co.png" alt="Đồ giả cổ" class="max-h-16 w-auto object-contain">
+              </div>
+              <p class="text-xs sm:text-sm font-medium text-dl-dark">Đồ giả cổ</p>
+            </div>
+
+            <div class="group bg-white rounded-2xl border border-slate-200 shadow-soft/40 px-3 py-4 sm:px-4 sm:py-5 flex flex-col items-center text-center hover:-translate-y-1 hover:shadow-soft hover:border-dl-gold/60 transition">
+              <div class="mb-3 h-16 w-16 flex items-center justify-center">
+                <img src="./assets/icons/noi-that-khong-gian-tho.png" alt="Nội thất không gian thờ" class="max-h-16 w-auto object-contain">
+              </div>
+              <p class="text-xs sm:text-sm font-medium text-dl-dark">Nội thất không gian thờ</p>
+            </div>
+
+            <div class="group bg-white rounded-2xl border border-slate-200 shadow-soft/40 px-3 py-4 sm:px-4 sm:py-5 flex flex-col items-center text-center hover:-translate-y-1 hover:shadow-soft hover:border-dl-gold/60 transition">
+              <div class="mb-3 h-16 w-16 flex items-center justify-center">
+                <img src="./assets/icons/cac-loai-tuong-phat.png" alt="Các loại tượng Phật" class="max-h-16 w-auto object-contain">
+              </div>
+              <p class="text-xs sm:text-sm font-medium text-dl-dark">Các loại tượng Phật</p>
+            </div>
+
+            <div class="group bg-white rounded-2xl border border-slate-200 shadow-soft/40 px-3 py-4 sm:px-4 sm:py-5 flex flex-col items-center text-center hover:-translate-y-1 hover:shadow-soft hover:border-dl-gold/60 transition">
+              <div class="mb-3 h-16 w-16 flex items-center justify-center">
+                <img src="./assets/icons/dong-son-trang.png" alt="Động sơn trang" class="max-h-16 w-auto object-contain">
+              </div>
+              <p class="text-xs sm:text-sm font-medium text-dl-dark">Động sơn trang</p>
+            </div>
+
+            <div class="group bg-white rounded-2xl border border-slate-200 shadow-soft/40 px-3 py-4 sm:px-4 sm:py-5 flex flex-col items-center text-center hover:-translate-y-1 hover:shadow-soft hover:border-dl-gold/60 transition">
+              <div class="mb-3 h-16 w-16 flex items-center justify-center">
+                <img src="./assets/icons/do-tho-go.png" alt="Đồ thờ gỗ" class="max-h-16 w-auto object-contain">
+              </div>
+              <p class="text-xs sm:text-sm font-medium text-dl-dark">Đồ thờ gỗ</p>
+            </div>
+
+            <div class="group bg-white rounded-2xl border border-slate-200 shadow-soft/40 px-3 py-4 sm:px-4 sm:py-5 flex flex-col items-center text-center hover:-translate-y-1 hover:shadow-soft hover:border-dl-gold/60 transition">
+              <div class="mb-3 h-16 w-16 flex items-center justify-center">
+                <img src="./assets/icons/hoanh-phi-cau-doi.png" alt="Hoành phi – Câu đối" class="max-h-16 w-auto object-contain">
+              </div>
+              <p class="text-xs sm:text-sm font-medium text-dl-dark">Hoành phi – Câu đối</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- LÝ DO -->
+      <section id="ly-do" class="py-8 sm:py-10 lg:py-12 bg-gradient-to-b from-dl-bg to-[#e8dfd3] border-y border-slate-200/70">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid lg:grid-cols-2 gap-8 lg:gap-10 items-center">
+            <div>
+              <h3 class="font-display text-xl sm:text-2xl lg:text-3xl font-semibold text-dl-dark">
+                Vì sao gia chủ tin chọn <span class="text-dl-gold">Đại Lộc</span>?
+              </h3>
+              <p class="mt-3 text-sm sm:text-base text-slate-700">
+                Chúng tôi hiểu rằng không gian thờ không chỉ là nội thất,
+                mà là nơi gắn liền với truyền thống, tâm linh và sự bình an của cả gia đình.
+              </p>
+
+              <div class="mt-5 space-y-4">
+                <div class="flex gap-3">
+                  <div class="mt-1 h-7 w-7 rounded-full bg-dl-gold/10 flex items-center justify-center text-xs text-dl-gold">1</div>
+                  <div>
+                    <p class="text-sm font-semibold text-dl-dark">Thiết kế hài hòa giữa cổ kính và hiện đại</p>
+                    <p class="text-xs sm:text-sm text-slate-600">
+                      Vẫn giữ nét truyền thống nhưng không nặng nề, phù hợp cho căn hộ, chung cư,
+                      nhà phố phong cách mới.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex gap-3">
+                  <div class="mt-1 h-7 w-7 rounded-full bg-dl-gold/10 flex items-center justify-center text-xs text-dl-gold">2</div>
+                  <div>
+                    <p class="text-sm font-semibold text-dl-dark">Vật liệu chuẩn, thi công tỉ mỉ</p>
+                    <p class="text-xs sm:text-sm text-slate-600">
+                      Gỗ đã xử lý co ngót, mối mọt, sơn phủ cao cấp, từng hoa văn được chạm trổ
+                      bởi thợ lành nghề.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex gap-3">
+                  <div class="mt-1 h-7 w-7 rounded-full bg-dl-gold/10 flex items-center justify-center text-xs text-dl-gold">3</div>
+                  <div>
+                    <p class="text-sm font-semibold text-dl-dark">Quy trình làm việc rõ ràng, đúng tiến độ</p>
+                    <p class="text-xs sm:text-sm text-slate-600">
+                      Tư vấn – Báo giá – Duyệt mẫu – Sản xuất – Lắp đặt – Hậu mãi, có hợp đồng đầy đủ.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Đánh giá khách hàng (Swiper) -->
+            <div class="space-y-4">
+              <div class="swiper testimonial-swiper">
+                <div class="swiper-wrapper items-stretch">
+                  <div class="swiper-slide flex">
+                    <div class="bg-white rounded-3xl shadow-soft border border-slate-200 p-5 sm:p-6 flex flex-col h-full">
+                      <p class="text-xs uppercase tracking-[0.18em] text-slate-400">ĐÁNH GIÁ TỪ KHÁCH HÀNG</p>
+                      <p class="mt-3 text-sm sm:text-base text-slate-700 leading-relaxed flex-1">
+                        “Không gian thờ sau khi làm xong rất ấm cúng mà không bị nặng nề,
+                        nội thất chung cư vẫn modern nhưng khu vực bàn thờ thì trang nghiêm, chỉn chu.”
+                      </p>
+                      <div class="mt-5 flex items-center justify-between">
+                        <div>
+                          <p class="text-sm font-semibold text-dl-dark">Anh Nam – Chung cư Hoàng Mai</p>
+                          <p class="text-xs text-slate-500">Thiết kế & thi công trọn gói phòng thờ</p>
+                        </div>
+                        <div class="flex gap-0.5 text-yellow-400 text-base">★★★★★</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide flex">
+                    <div class="bg-white rounded-3xl shadow-soft border border-slate-200 p-5 sm:p-6 flex flex-col h-full">
+                      <p class="text-xs uppercase tracking-[0.18em] text-slate-400">ĐÁNH GIÁ TỪ KHÁCH HÀNG</p>
+                      <p class="mt-3 text-sm sm:text-base text-slate-700 leading-relaxed flex-1">
+                        “Hoành phi – câu đối và bàn thờ gỗ mít làm rất đẹp, đường nét tinh xảo.”
+                      </p>
+                      <div class="mt-5 flex items-center justify-between">
+                        <div>
+                          <p class="text-sm font-semibold text-dl-dark">Chị Hạnh – Biệt thự Hà Đông</p>
+                          <p class="text-xs text-slate-500">Hoành phi – câu đối & án gian đồng bộ</p>
+                        </div>
+                        <div class="flex gap-0.5 text-yellow-400 text-base">★★★★★</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide flex">
+                    <div class="bg-white rounded-3xl shadow-soft border border-slate-200 p-5 sm:p-6 flex flex-col h-full">
+                      <p class="text-xs uppercase tracking-[0.18em] text-slate-400">ĐÁNH GIÁ TỪ KHÁCH HÀNG</p>
+                      <p class="mt-3 text-sm sm:text-base text-slate-700 leading-relaxed flex-1">
+                        “Từ bản vẽ 3D đến thi công thực tế đều giống như trao đổi.
+                        Bàn thờ treo tường gọn gàng, hợp phong thủy.”
+                      </p>
+                      <div class="mt-5 flex items-center justify-between">
+                        <div>
+                          <p class="text-sm font-semibold text-dl-dark">Anh Bình – Cầu Giấy</p>
+                          <p class="text-xs text-slate-500">Thiết kế 3D & bàn thờ treo</p>
+                        </div>
+                        <div class="flex gap-0.5 text-yellow-400 text-base">★★★★★</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-pagination mt-3"></div>
+              </div>
+
+              <div class="flex flex-wrap gap-3 text-xs sm:text-sm text-slate-600">
+                <div class="flex items-center gap-2 px-3 py-2 rounded-full bg-white/80 border border-slate-200">
+                  <span class="text-lg">🏡</span> <span>&gt; 300+ công trình đã thực hiện</span>
+                </div>
+                <div class="flex items-center gap-2 px-3 py-2 rounded-full bg-white/80 border border-slate-200">
+                  <span class="text-lg">📍</span> <span>Sơn Đồng – Hoài Đức – Hà Nội</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- SẢN PHẨM TIÊU BIỂU -->
+      <section id="san-pham" class="py-10 sm:py-12 lg:py-14 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-6 sm:mb-8">
+            <h3 class="font-display text-2xl sm:text-3xl font-semibold text-dl-dark">Sản phẩm tiêu biểu</h3>
+            <p class="mt-2 text-sm sm:text-base text-slate-600 max-w-2xl mx-auto">
+              Một số mẫu bàn thờ, tủ thờ, hoành phi – câu đối được nhiều gia chủ lựa chọn tại Đồ Thờ Đại Lộc.
+            </p>
+          </div>
+
+          <div class="relative">
+            <div class="swiper sanpham-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="group bg-white rounded-2xl shadow-soft border border-slate-200 overflow-hidden hover:-translate-y-1 hover:shadow-xl transition">
+                    <div class="aspect-[4/3] overflow-hidden">
+                      <img src="./assets/img/ban-tho-go-gu.jpg" alt="Bàn thờ đứng gỗ gụ chạm sen"
+                           class="w-full h-full object-cover group-hover:scale-105 transition cursor-zoom-in"
+                           data-lightbox="true">
+                    </div>
+                    <div class="p-4">
+                      <h4 class="font-display text-lg font-semibold text-dl-dark">Bàn thờ đứng gỗ gụ chạm sen</h4>
+                      <p class="text-sm text-slate-600 mt-1">Phù hợp nhà phố, chung cư; thiết kế tối giản, giữ nét truyền thống.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="group bg-white rounded-2xl shadow-soft border border-slate-200 overflow-hidden hover:-translate-y-1 hover:shadow-xl transition">
+                    <div class="aspect-[4/3] overflow-hidden">
+                      <img src="./assets/img/sap-go-huong.jpg" alt="Sập thờ Mai Điểu gỗ Hương Đá"
+                           class="w-full h-full object-cover group-hover:scale-105 transition cursor-zoom-in"
+                           data-lightbox="true">
+                    </div>
+                    <div class="p-4">
+                      <h4 class="font-display text-lg font-semibold text-dl-dark">Sập Thờ Mai Điểu Gỗ Hương Đá</h4>
+                      <p class="text-sm text-slate-600 mt-1">Gỗ tuyển chọn, chạm khắc tinh xảo, phù hợp nhà thờ họ, biệt thự.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="group bg-white rounded-2xl shadow-soft border border-slate-200 overflow-hidden hover:-translate-y-1 hover:shadow-xl transition">
+                    <div class="aspect-[4/3] overflow-hidden">
+                      <img src="./assets/img/hoanh-phi-cau-doi.jpg" alt="Hoành phi – câu đối dát vàng"
+                           class="w-full h-full object-cover group-hover:scale-105 transition cursor-zoom-in"
+                           data-lightbox="true">
+                    </div>
+                    <div class="p-4">
+                      <h4 class="font-display text-lg font-semibold text-dl-dark">Hoành phi – câu đối dát vàng</h4>
+                      <p class="text-sm text-slate-600 mt-1">Nội dung thư pháp Hán – Nôm, tư vấn ý nghĩa theo mong muốn gia chủ.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="group bg-white rounded-2xl shadow-soft border border-slate-200 overflow-hidden hover:-translate-y-1 hover:shadow-xl transition">
+                    <div class="aspect-[4/3] overflow-hidden">
+                      <img src="./assets/img/ban-tho-treo.jpg" alt="Bàn thờ treo tường tối giản"
+                           class="w-full h-full object-cover group-hover:scale-105 transition cursor-zoom-in"
+                           data-lightbox="true">
+                    </div>
+                    <div class="p-4">
+                      <h4 class="font-display text-lg font-semibold text-dl-dark">Bàn thờ treo tường tối giản</h4>
+                      <p class="text-sm text-slate-600 mt-1">Thiết kế nhỏ gọn cho căn hộ diện tích khiêm tốn, vẫn trang nghiêm.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev !text-dl-dark"></div>
+              <div class="swiper-button-next !text-dl-dark"></div>
+            </div>
+
+            <div class="mt-6 flex justify-center">
+              <a href="javascript:void(0)" data-open-contact
+                 class="inline-flex items-center gap-2 rounded-full border border-dl-gold px-5 py-2 text-xs sm:text-sm font-medium text-dl-dark hover:bg-dl-gold hover:text-white transition">
+                Xem thêm &amp; nhận catalog sản phẩm <span>↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CÔNG TRÌNH -->
+      <section id="du-an" class="py-10 sm:py-12 lg:py-14 bg-gradient-to-b from-dl-bg to-[#e7dfd4] border-y border-slate-200/70">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-6 sm:mb-8">
+            <h3 class="font-display text-2xl sm:text-3xl font-semibold text-dl-dark">Một số công trình đã thực hiện</h3>
+            <p class="mt-2 text-sm sm:text-base text-slate-700 max-w-2xl mx-auto">
+              Đại Lộc đã thi công nhiều không gian thờ cho căn hộ, nhà phố, biệt thự và nhà thờ họ trên khắp Hà Nội và các tỉnh lân cận.
+            </p>
+          </div>
+
+          <div class="relative">
+            <div class="swiper duan-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="bg-white rounded-2xl shadow-soft border border-slate-200 overflow-hidden">
+                    <div class="aspect-[4/3] overflow-hidden">
+                      <img src="./assets/img/kgt-hien-dai.jpg" class="w-full h-full object-cover cursor-zoom-in"
+                           alt="Phòng thờ chung cư Hoàng Mai" data-lightbox="true">
+                    </div>
+                    <div class="p-4">
+                      <h4 class="font-display text-lg font-semibold text-dl-dark">Phòng thờ – Chung cư Hoàng Mai</h4>
+                      <p class="text-sm text-slate-600 mt-1">Thiết kế &amp; thi công trọn gói, bàn thờ đứng kết hợp vách trang trí.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="bg-white rounded-2xl shadow-soft border border-slate-200 overflow-hidden">
+                    <div class="aspect-[4/3] overflow-hidden">
+                      <img src="./assets/img/kgt-sd.jpg" class="w-full h-full object-cover cursor-zoom-in"
+                           alt="Không gian thờ nhà phố Sơn Đồng" data-lightbox="true">
+                    </div>
+                    <div class="p-4">
+                      <h4 class="font-display text-lg font-semibold text-dl-dark">Không gian thờ – Nhà phố Sơn Đồng</h4>
+                      <p class="text-sm text-slate-600 mt-1">Án gian, hoành phi – câu đối, đồ thờ đồng bộ một phong cách.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="bg-white rounded-2xl shadow-soft border border-slate-200 overflow-hidden">
+                    <div class="aspect-[4/3] overflow-hidden">
+                      <img src="./assets/img/ban-tho.webp" class="w-full h-full object-cover cursor-zoom-in"
+                           alt="Phòng thờ biệt thự Hà Đông" data-lightbox="true">
+                    </div>
+                    <div class="p-4">
+                      <h4 class="font-display text-lg font-semibold text-dl-dark">Phòng thờ – Biệt thự Hà Đông</h4>
+                      <p class="text-sm text-slate-600 mt-1">Thiết kế tối giản, kết hợp nội thất hiện đại và đồ thờ truyền thống.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev !text-dl-dark"></div>
+              <div class="swiper-button-next !text-dl-dark"></div>
+            </div>
+
+            <div class="mt-6 flex justify-center">
+              <a href="javascript:void(0)" data-open-contact
+                 class="inline-flex items-center gap-2 rounded-full border border-dl-gold px-5 py-2 text-xs sm:text-sm font-medium text-dl-dark hover:bg-dl-gold hover:text-white transition">
+                Xem thêm công trình &amp; nhận tư vấn chi tiết <span>↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- POPUP LIÊN HỆ -->
+      <div id="contact-modal"
+           class="fixed inset-0 z-50 hidden bg-black/50 backdrop-blur-sm flex items-center justify-center px-4">
+        <div class="relative max-w-3xl w-full bg-dl-dark text-dl-bg rounded-3xl shadow-soft overflow-hidden">
+          <button id="contact-close"
+                  class="absolute right-3 top-3 w-8 h-8 rounded-full bg-black/30 flex items-center justify-center text-slate-100 hover:bg-black/50">
+            ✕
+          </button>
+
+          <div class="grid md:grid-cols-[1.2fr,1fr]">
+            <!-- Text -->
+            <div class="p-6 sm:p-8 space-y-4">
+              <p class="text-[11px] sm:text-xs uppercase tracking-[0.18em] text-dl-gold/60">LIÊN HỆ ĐẶT HÀNG &amp; TƯ VẤN</p>
+              <h3 class="font-display text-xl sm:text-2xl font-semibold">Kết nối với Đồ Thờ Đại Lộc</h3>
+              <p class="text-sm sm:text-base text-slate-200">
+                Sơn Đồng – Hoài Đức – Hà Nội
+                <span class="block text-xs sm:text-sm text-slate-400 mt-1">(Vui lòng hẹn trước để được tiếp đón chu đáo)</span>
+              </p>
+
+              <div class="grid sm:grid-cols-2 gap-4 pt-2">
+                <div class="space-y-1">
+                  <p class="text-xs text-slate-400 uppercase tracking-[0.18em]">Điện thoại</p>
+                  <a href="tel:0396297856" class="text-lg font-semibold text-dl-gold hover:underline">0396 297 856</a>
+                </div>
+                <div class="space-y-1">
+                  <p class="text-xs text-slate-400 uppercase tracking-[0.18em]">Zalo / Facebook</p>
+                  <p class="text-sm text-slate-200">
+                    Kết nối Zalo qua số <span class="font-medium text-white">0396 297 856</span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="pt-3 flex flex-wrap gap-3">
+                <a href="tel:0396297856"
+                   class="inline-flex items-center gap-2 rounded-full bg-dl-gold text-dl-bg px-5 py-2 text-xs sm:text-sm font-semibold hover:bg-dl-gold/90 transition">
+                  GỌI NGAY CHO ĐẠI LỘC <span>📞</span>
+                </a>
+                <a href="https://zalo.me/0396297856" target="_blank"
+                   class="inline-flex items-center gap-2 rounded-full border border-dl-gold/60 px-4 py-2 text-xs sm:text-sm font-medium text-dl-bg hover:bg-dl-gold/10 transition">
+                  Nhắn Zalo trao đổi nhanh
+                </a>
+              </div>
+            </div>
+
+            <!-- Form -->
+            <div class="bg-[#f2e6d7] text-dl-dark p-6 sm:p-7 flex flex-col justify-center gap-4">
+              <p class="text-sm sm:text-base font-semibold">Để lại thông tin, chúng tôi sẽ chủ động liên hệ:</p>
+
+              <!-- ✅ SỬA QUAN TRỌNG: action javascript:void(0) để không POST về index.html -->
+              <form id="contact-form" method="post" action="javascript:void(0)" class="space-y-3 text-xs sm:text-sm">
+                <div>
+                  <label class="block text-[11px] text-slate-600 mb-1">Họ tên</label>
+                  <input type="text" name="name" required
+                         placeholder="VD: Nguyễn Văn A"
+                         class="w-full rounded-xl border border-slate-300 bg-white/70 px-3 py-2 outline-none focus:ring-2 focus:ring-dl-gold/60 focus:border-dl-gold/70">
+                </div>
+
+                <div>
+                  <label class="block text-[11px] text-slate-600 mb-1">Số điện thoại</label>
+                  <input type="tel" name="phone" required
+                         placeholder="Số Zalo / Điện thoại"
+                         class="w-full rounded-xl border border-slate-300 bg-white/70 px-3 py-2 outline-none focus:ring-2 focus:ring-dl-gold/60 focus:border-dl-gold/70">
+                </div>
+
+                <div>
+                  <label class="block text-[11px] text-slate-600 mb-1">Email (nhận xác nhận)</label>
+                  <input type="email" name="email"
+                         placeholder="VD: ten@email.com"
+                         class="w-full rounded-xl border border-slate-300 bg-white/70 px-3 py-2 outline-none focus:ring-2 focus:ring-dl-gold/60 focus:border-dl-gold/70">
+                </div>
+
+                <div>
+                  <label class="block text-[11px] text-slate-600 mb-1">Nhu cầu</label>
+                  <textarea rows="3" name="message"
+                            placeholder="VD: Thiết kế phòng thờ cho nhà phố 4 tầng..."
+                            class="w-full rounded-xl border border-slate-300 bg-white/70 px-3 py-2 outline-none resize-none focus:ring-2 focus:ring-dl-gold/60 focus:border-dl-gold/70"></textarea>
+                </div>
+
+                <button type="submit"
+                        class="w-full rounded-xl bg-dl-dark text-dl-bg font-semibold py-2 text-xs sm:text-sm border border-dl-dark hover:bg-black/90 transition disabled:opacity-60"
+                        id="contact-submit">
+                  GỬI THÔNG TIN
+                </button>
+
+                <p id="contact-status" class="text-[11px] text-slate-600"></p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- LIGHTBOX -->
+      <div id="lightbox-overlay"
+           class="fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-50 hidden">
+        <div class="relative max-w-4xl max-h-[90vh] mx-4">
+          <button id="lightbox-close"
+                  class="absolute -top-4 -right-4 bg-white/90 text-slate-800 rounded-full w-8 h-8 flex items-center justify-center shadow-lg text-sm">
+            ✕
+          </button>
+          <img id="lightbox-image" src="" alt="Xem ảnh lớn"
+               class="max-h-[90vh] w-auto max-w-full rounded-2xl border border-slate-200 shadow-soft bg-black/20 object-contain">
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+      <footer class="border-t border-slate-200 bg-[#111827] text-slate-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
+          <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+            <div>
+              <p class="font-display text-lg font-semibold text-white">Đồ Thờ Đại Lộc</p>
+              <p class="text-xs sm:text-sm text-slate-400 mt-1">
+                Sơn Đồng – Hoài Đức – Hà Nội • Chuyên tư vấn, thiết kế &amp; sản xuất đồ thờ cao cấp.
+              </p>
+            </div>
+            <div class="text-xs sm:text-sm text-right space-y-1">
+              <p>Điện thoại: <a href="tel:0396297856" class="text-dl-gold font-medium">0396 297 856</a></p>
+              <p>Zalo: <span class="text-slate-100">0396 297 856</span></p>
+              <p class="text-slate-500 text-[11px] sm:text-xs">© <span id="year"></span> Đồ Thờ Đại Lộc. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    </main>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    // Năm footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Slider đánh giá
+    new Swiper('.testimonial-swiper', {
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 16,
+      autoplay: { delay: 6000, disableOnInteraction: false },
+      pagination: { el: '.testimonial-swiper .swiper-pagination', clickable: true },
+    });
+
+    // Slider sản phẩm
+    new Swiper('.sanpham-swiper', {
+      loop: true,
+      spaceBetween: 16,
+      slidesPerView: 1.1,
+      centeredSlides: true,
+      autoplay: { delay: 4000, disableOnInteraction: false },
+      pagination: { el: '.sanpham-swiper .swiper-pagination', clickable: true },
+      navigation: { nextEl: '.sanpham-swiper .swiper-button-next', prevEl: '.sanpham-swiper .swiper-button-prev' },
+      breakpoints: { 640:{ slidesPerView:2, centeredSlides:false }, 1024:{ slidesPerView:3 } },
+    });
+
+    // Slider công trình
+    new Swiper('.duan-swiper', {
+      loop: true,
+      spaceBetween: 20,
+      slidesPerView: 1.05,
+      centeredSlides: true,
+      autoplay: { delay: 4500, disableOnInteraction: false },
+      pagination: { el: '.duan-swiper .swiper-pagination', clickable: true },
+      navigation: { nextEl: '.duan-swiper .swiper-button-next', prevEl: '.duan-swiper .swiper-button-prev' },
+      breakpoints: { 640:{ slidesPerView:2, centeredSlides:false }, 1024:{ slidesPerView:3 } },
+    });
+
+    // LIGHTBOX
+    const overlay = document.getElementById('lightbox-overlay');
+    const overlayImg = document.getElementById('lightbox-image');
+    const overlayClose = document.getElementById('lightbox-close');
+
+    if (overlay && overlayImg && overlayClose) {
+      document.querySelectorAll('[data-lightbox="true"]').forEach(img => {
+        img.addEventListener('click', () => {
+          overlayImg.src = img.src;
+          overlay.classList.remove('hidden');
+        });
+      });
+
+      overlayClose.addEventListener('click', () => {
+        overlay.classList.add('hidden');
+        overlayImg.src = '';
+      });
+
+      overlay.addEventListener('click', (e) => {
+        if (e.target === overlay) {
+          overlay.classList.add('hidden');
+          overlayImg.src = '';
+        }
+      });
+    }
+
+    // Popup liên hệ
+    const contactModal    = document.getElementById('contact-modal');
+    const contactClose    = document.getElementById('contact-close');
+    const contactTriggers = document.querySelectorAll('[data-open-contact]');
+
+    function openContactModal() {
+      contactModal.classList.remove('hidden');
+      document.documentElement.classList.add('overflow-hidden');
+    }
+
+    function closeContactModal() {
+      contactModal.classList.add('hidden');
+      document.documentElement.classList.remove('overflow-hidden');
+    }
+
+    contactTriggers.forEach(btn => btn.addEventListener('click', openContactModal));
+    if (contactClose) contactClose.addEventListener('click', closeContactModal);
+    if (contactModal) contactModal.addEventListener('click', (e) => { if (e.target === contactModal) closeContactModal(); });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeContactModal(); });
+
+    // ===============================
+    // ✅ SUBMIT FORM -> APPS SCRIPT
+    // ===============================
+    const FORM_URL = 'https://script.google.com/macros/s/AKfycbxP--z_zRrZkgyt493Dw-taSRxdGMFnE9fUKG5oRs99AmhFW2p64-RiH3iMP5fSoY2K/exec';
+
+const form = document.getElementById('contact-form');
+const statusEl = document.getElementById('contact-status');
+const submitBtn = document.getElementById('contact-submit');
+
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+
+  statusEl.textContent = '';
+  statusEl.className = 'text-[11px] text-slate-600';
+  submitBtn.disabled = true;
+  submitBtn.textContent = 'ĐANG GỬI...';
+
+  const fd = new FormData(form);
+  const payload = new URLSearchParams();
+  for (const [k, v] of fd.entries()) payload.append(k, String(v ?? ''));
+
+  payload.append('timestamp', new Date().toLocaleString('vi-VN'));
+  payload.append('source', 'Website Đại Lộc');
+  payload.append('ua', navigator.userAgent || '');
+
+  try {
+    const blob = new Blob([payload.toString()], {
+      type: 'application/x-www-form-urlencoded;charset=UTF-8'
+    });
+
+    // ✅ Không CORS, ghi chắc chắn
+    let ok = navigator.sendBeacon && navigator.sendBeacon(FORM_URL, blob);
+
+    // fallback
+    if (!ok) {
+      await fetch(FORM_URL, { method: 'POST', mode: 'no-cors', body: blob });
+      ok = true;
+    }
+
+    statusEl.textContent = '✓ Cảm ơn bạn! Thông tin đã được gửi thành công.';
+    statusEl.className = 'text-[11px] text-green-600 font-medium';
+    form.reset();
+    setTimeout(() => closeContactModal(), 1500);
+
+  } catch (err) {
+    console.error(err);
+    statusEl.textContent = '✕ Gửi thất bại. Vui lòng thử lại hoặc gọi 0396 297 856.';
+    statusEl.className = 'text-[11px] text-red-600 font-medium';
+  } finally {
+    submitBtn.disabled = false;
+    submitBtn.textContent = 'GỬI THÔNG TIN';
+  }
+});
+
+  
+
+  </script>
+</body>
+</html>
